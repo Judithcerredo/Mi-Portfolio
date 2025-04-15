@@ -55,6 +55,7 @@ body {
   
   main {
     padding: 40px 20px;
+    min-height: 100vh;
     animation: fadeInUp 1s ease forwards;
   }
   
@@ -130,8 +131,8 @@ body {
     color: #333;
   }
 
-  /* Colores individuales para cada icono */
-.skill-card i.fa-html5 {
+  /* Iconos */
+  .skill-card i.fa-html5 {
     color: #e34c26;
   }
   
