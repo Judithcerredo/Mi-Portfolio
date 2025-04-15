@@ -16,6 +16,31 @@ body {
     max-width: 1100px;
     margin: 0 auto;
   }
+
+  .nombre-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  /* Avatar redondo con efecto neon */
+  .avatar-neon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+    box-shadow: 0 0 10px #ffff33, 0 0 20px #ffff33, 0 0 30px #ffff33;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .avatar-neon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 12px #ffff33, 0 0 25px #ffff33, 0 0 35px #ffff33;
+  }
+  
   
   nav a {
     color: #fff;
@@ -140,7 +165,7 @@ body {
   }
   
   .skill-card i.fa-database {
-    color: #4db33d; /* Verde para MySQL */
+    color: #4db33d; 
   }
   
   .skill-card i.fa-git-alt {
@@ -150,6 +175,57 @@ body {
   .skill-card i.fa-github {
     color: #333;
   }
+
+  .timeline {
+    padding: 60px 20px;
+    background: #fff;
+  }
+  
+  .timeline h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+  }
+  
+  .timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: auto;
+    max-width: 800px;
+    border-left: 3px solid #ccc;
+    padding-left: 20px;
+  }
+  
+  .timeline-item {
+    position: relative;
+    padding: 20px 0;
+  }
+  
+  .timeline-icon {
+    position: absolute;
+    left: -32px;
+    top: 20px;
+    font-size: 1.5rem;
+    background: #f0f0f0;
+    border-radius: 50%;
+    padding: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  .timeline-content {
+    background: #f9f9f9;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+  }
+  
+  .timeline-content:hover {
+    transform: translateX(5px);
+  }
+  
 
   /* Animaciones */
   @keyframes fadeIn {
