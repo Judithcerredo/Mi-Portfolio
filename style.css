@@ -8,6 +8,35 @@ body {
     animation: fadeIn 1.5s ease-in;
     min-height: 100vh;
   }
+
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .nav-botones {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-end;
+  }
+  
+  .header-buttons {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+  
   
   header {
     background: #333;
@@ -52,6 +81,82 @@ body {
   nav a:hover::after {
     width: 100%;
   }
+
+  .header-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .btn-header {
+    background-color: #ffcc00;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-header:hover {
+    background-color: #e6b800;
+    transform: translateY(-2px);
+  }
+  
+  .btn-header-outline {
+    border: 2px solid #ffcc00;
+    color: #ffcc00;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-header-outline:hover {
+    background-color: #ffcc00;
+    color: #333;
+    transform: translateY(-2px);
+  }
+
+  .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .header-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .header-derecha {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .header-flex {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .header-derecha {
+      align-self: flex-end;
+    }
+  
+    nav {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  }
+  
+  
   
   main {
     padding: 40px 20px;
@@ -209,6 +314,56 @@ body {
   .timeline-content:hover {
     transform: translateX(5px);
   }
+
+  .contacto {
+    padding: 60px 20px;
+    background: #fffce8;
+    text-align: center;
+  }
+  
+  .contacto h2 {
+    color: #333;
+    margin-bottom: 30px;
+    font-size: 2rem;
+  }
+  
+  .formulario {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formulario input,
+  .formulario textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: inherit;
+  }
+  
+  .formulario textarea {
+    resize: vertical;
+    height: 120px;
+  }
+  
+  .formulario button {
+    background: #ffcc00;
+    color: #333;
+    font-weight: bold;
+    border: none;
+    padding: 12px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .formulario button:hover {
+    background: #e6b800;
+  }
+  
   
 
   /* Animaciones */
